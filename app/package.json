@@ -1,12 +1,13 @@
 {
-  "name": "Blog Editor",
+  "name": "BlogEditor",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "packager": "electron-packager . BlogEditor --platform=win32 --arch=x64 --icon=../img/favicon.ico --out=../BuildOut --asar --app-version=0.0.1"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/islwei/blog-editor",
   "keywords": [
     "Electron",
     "quick",
