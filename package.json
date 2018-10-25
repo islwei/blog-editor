@@ -2,17 +2,18 @@
   "name": "blogeditor",
   "version": "0.1.0",
   "private": true,
-  "main": "./main.js",
+  "main": "main.js",
+  "homepage": ".",
   "dependencies": {
+    "ajv-keywords": "^3.2.0",
     "electron": "^3.0.3",
-    "electron-package": "^0.1.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4"
   },
   "devDependencies": {
     "electron": "^3.0.3",
-    "electron-package": "^0.1.0"
+    "electron-packager": "^12.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "packager": "electron-packager . BlogEditor --platform=win32 --arch=x64 --icon=./public/favicon.ico --out ./build --app-version=1.0.1"
+    "packager": "electron-packager build BlogEditor --platform=win32 --arch=x64 --icon=./public/favicon.ico --out ./out --app-version=1.0.1"
   },
   "eslintConfig": {
     "extends": "react-app"
